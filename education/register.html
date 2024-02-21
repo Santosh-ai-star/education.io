@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <script src="https://kit.fontawesome.com/7109ebd684.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ab8d99d22c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <section class="wrapper container">
+            <a href="index.html" class="brand">
+                <img src="image/logo.webp" alt="logo">
+            </a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <span class="overlay"></span>
+            <nav class="navbar" id="navbar">
+                <ul class="menu" id="menu">
+                    <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+
+                    <li class="menu-item menu-dropdown">
+                        <span class="menu-link" data-toggle="submenu">Courses<i class="bx bx-chevron-down"></i></span>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="courses.html" class="submenu-link">Courses Grid</a></li>
+                            <li class="submenu-item"><a href="courses3.html" class="submenu-link">Courses</a></li>
+                            <li class="submenu-item"><a href="courseDetail.html" class="submenu-link">Courses
+                                    details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-dropdown">
+                        <span class="menu-link events" data-toggle="submenu " data-bs-toggle="tab" aria-selected="true"
+                            role="tab">Events<i class="bx bx-chevron-down"></i></span>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="events.html" class="submenu-link "> Event 1</a></li>
+                            <li class="submenu-item"><a href="event2.html" class="submenu-link">Event 2</a></li>
+                            <li class="submenu-item"><a href="eventDetails.html" class="submenu-link">Event
+                                    Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-dropdown">
+                        <span class="menu-link active" data-toggle="submenu">Pages<i
+                                class="bx bx-chevron-down"></i></span>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="about.html " class="submenu-link ">About</a></li>
+                            <li class="submenu-item"><a href="teacher.html" class="submenu-link ">Teachers</a></li>
+                            <li class="submenu-item"><a href="teacherdetails.html" class="submenu-link ">Teachers
+                                    details</a></li>
+                            <li class="submenu-item"><a href="gallery.html" class="submenu-link ">Gallery </a>
+                            </li>
+                            <li class="submenu-item"><a href="gallery-masonry.html" class="submenu-link">Gallery
+                                    Masonry</a></li>
+                            <li class="submenu-item"><a href="testimonial.html" class="submenu-link  ">Testimonial</a>
+                            </li>
+                            <li class="submenu-item"><a href="faq.html" class="submenu-link ">FAQ'S</a></li>
+                            <li class="submenu-item"><a href="notice.html" class="submenu-link    ">Notice</a></li>
+                            <li class="submenu-item"><a href="login.html" class="submenu-link ">Login</a></li>
+                            <li class="submenu-item"><a href="register.html" class="submenu-link active">register</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-dropdown">
+                        <span class="menu-link" data-toggle="submenu">Shop<i class="bx bx-chevron-down"></i></span>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="shop.html" class="submenu-link">Shop</a></li>
+                            <li class="submenu-item"><a href="shop-left.html" class="submenu-link">Shop Left
+                                    Slidebar</a></li>
+                            <li class="submenu-item"><a href="shop-right.html" class="submenu-link">Shop Right
+                                    Slidebar</a></li>
+                            <li class="submenu-item"><a href="shopDetail.html" class="submenu-link">Shop Details </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-dropdown">
+                        <span class="menu-link" data-toggle="submenu">Blog<i class="bx bx-chevron-down"></i></span>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#" class="submenu-link">Blog</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">Blog Left Slidebar</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">Blog Right Slidebar</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">Blog Details </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item"><a href="#" class="menu-link">contact</a></li>
+
+                </ul>
+            </nav>
+            <div class="for-class">
+                <div class="for-glass">
+                    <form action="#">
+                        <input type="text" placeholder="Search">
+                        <button class="fa"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="page-banner">
+        <div class="page-banner-bg bg_cover" style="background-image: url(image/page-banner.webp);">
+            <div class="container-5">
+                <div class="banner-content text-center">
+                    <h2 class="title" style="margin-left: 85px;">
+                        Register
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="login-register">
+        <div class="container-5 justify-content-center"
+            style="display: flex; flex-direction: column; padding-left: 130px; width: 50%;">
+            <div class="login-register-content">
+                <h4 class="title">Create New Account</h4>
+                <div class="login-register-form">
+                    <form action="##">
+                        <div class="single-form">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName">
+                        </div>
+                        <div class="single-form">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName">
+                        </div>
+                        <div class="single-form">
+                            <label for="email">Email address *</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="single-form">
+                            <label for="user">Username *</label>
+                            <input type="text" id="user">
+                        </div>
+                        <div class="single-form">
+                            <label for="pass">Password *</label>
+                            <input type="password" id="pass">
+                        </div>
+                        <div class="single-form">
+                            <label for="pass2"> Confrim Password *</label>
+                            <input type="password" id="pass2">
+                        </div>
+                        <div class="single-form d-flex justify-content-between">
+                            <div class="checkbox">
+                                <input type="checkbox" id="remember">
+                                <label for="remember">
+                                    <span></span>
+                                    Receive Offers From Our Partners
+                                </label>
+                            </div>
+                            
+                        </div>
+                        <div class="single-form">
+                            <button class="main-btn">Register</button>
+                        </div>
+                        <div class="single-form">
+                            <label>Already have an account ?</label>
+                            <a href="register.html" class="main-btn main-btn-2">Log in instead!</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    const navbarMenu = document.getElementById("navbar");
+    const burgerMenu = document.getElementById("burger");
+    const overlayMenu = document.querySelector(".overlay");
+
+    // Show and Hide Navbar Function
+    const toggleMenu = () => {
+        navbarMenu.classList.toggle("active");
+        overlayMenu.classList.toggle("active");
+    };
+
+    // Collapsible Mobile Submenu Function
+    const collapseSubMenu = () => {
+        navbarMenu
+            .querySelector(".menu-dropdown.active .submenu")
+            .removeAttribute("style");
+        navbarMenu.querySelector(".menu-dropdown.active").classList.remove("active");
+    };
+
+    // Toggle Mobile Submenu Function
+    const toggleSubMenu = (e) => {
+        if (e.target.hasAttribute("data-toggle") && window.innerWidth <= 992) {
+            e.preventDefault();
+            const menuDropdown = e.target.parentElement;
+
+            // If Dropdown is Expanded, then Collapse It
+            if (menuDropdown.classList.contains("active")) {
+                collapseSubMenu();
+            } else {
+                // Collapse Existing Expanded Dropdown
+                if (navbarMenu.querySelector(".menu-dropdown.active")) {
+                    collapseSubMenu();
+                }
+
+                // Expanded the New Dropdown
+                menuDropdown.classList.add("active");
+                const subMenu = menuDropdown.querySelector(".submenu");
+                subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+            }
+        }
+    };
+
+    // Fixed Resize Window Function
+    const resizeWindow = () => {
+        if (window.innerWidth > 992) {
+            if (navbarMenu.classList.contains("active")) {
+                toggleMenu();
+            }
+            if (navbarMenu.querySelector(".menu-dropdown.active")) {
+                collapseSubMenu();
+            }
+        }
+    };
+
+    // Initialize Event Listeners
+    burgerMenu.addEventListener("click", toggleMenu);
+    overlayMenu.addEventListener("click", toggleMenu);
+    navbarMenu.addEventListener("click", toggleSubMenu);
+    window.addEventListener("resize", resizeWindow);
+
+
+    //    numbs
+    var counted = 0;
+    $(window).scroll(function () {
+
+        var oTop = $('.numbs').offset().top - window.innerHeight;
+        if (counted == 0 && $(window).scrollTop() > oTop) {
+            $('.count').each(function () {
+                var $this = $(this),
+                    countTo = $this.attr('data-count');
+                $({
+                    countNum: $this.text()
+                }).animate({
+                    countNum: countTo
+                },
+
+                    {
+
+                        duration: 2000,
+                        easing: 'swing',
+                        step: function () {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function () {
+                            $this.text(this.countNum);
+                            //alert('finished');
+                        }
+
+                    });
+            });
+            counted = 1;
+        }
+
+    });
+
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: true,
+        focusOnSelect: true
+    });
+
+    $('a[data-slide]').click(function (e) {
+        e.preventDefault();
+        var slideno = $(this).data('slide');
+        $('.slider-nav').slick('slickGoTo', slideno - 1);
+    });
+
+</script>
+</html>
